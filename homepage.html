@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News.io</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+          font-family: gilroy;
+        }
+        #main{
+            height: 100vh;
+            width: 100vw;
+            display: table-row;
+        }
+        #content{
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%,-50%);
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            border: 1px solid blue;
+            font-weight: 900;
+        }
+        button a{
+            text-decoration: none;
+            color: black;
+        }
+        button:hover{
+            background: rgba(0, 0, 255, 0.642);
+            transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        #overlay{
+            z-index: 99;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background: black;
+            animation: ov1 2s ease-in-out 1s both;
+        }
+        #overlay h1{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+            color: #fdfdfd;
+	        font-size: 14vw;
+	        -webkit-text-stroke: 0.3vw #2d2dfc5f;
+            animation: ov2 2s ease-in-out 1s both;
+        }
+        @keyframes ov1 {
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 0%;
+            }
+        }
+        @keyframes ov2 {
+            0%{
+                opacity: 1;
+                font-size: 8vw;
+            }
+            100%{
+                opacity: 0;
+                font-size: 3vw;
+
+            }
+        }
+
+      </style>
+  </head>
+<body>
+    <div id="overlay">
+        <h1 style="color: white; font-size: 8em;">News.io</h1>
+    </div>
+      <div id="main">
+        <div id="content">
+            <div>
+                <span><h1 style="text-align:left;float:left; font-size: 8vh;">Welcome to</h1> 
+                    <h1 style="text-align:right;float:right; padding-left: 10px; color: blue;font-size: 8vh;">News.io</h1> 
+                <h3 style="font-size: 5vh;">Explore the latest news..</h3>
+            </div>
+            <button><a href="/newsio?q=today&pageno=1">Read Now!</a></button>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script>
+      </script>
+</body>
+</html>
