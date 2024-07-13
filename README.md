@@ -7,10 +7,10 @@ You can read news and articles from various websites in a single page.
 
 Instructions on how to get a copy of the project up and running on your local machine.
 
-Example: git clone https://github.com/ParasGoswami06/NewsApp
-Example: cd NewsApp
-Example: npm install
-Example: nodemon server.js
+Example: git clone https://github.com/ParasGoswami06/NewsApp <br>
+Example: cd NewsApp <br>
+Example: npm install <br>
+Example: nodemon server.js <br>
 
 Now you can access the website on localhost:3000
 
