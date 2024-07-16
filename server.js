@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api', async (req, res) => {
-  console.log(req._parsedUrl.query);  // after ? all the data will be recieved 
+  // console.log(req._parsedUrl.query);  // after ? all the data will be recieved 
   let url="https://newsapi.org/v2/everything?"+req._parsedUrl.query
   r=await axios(url)
   a=r.data
@@ -20,5 +20,5 @@ app.get('/api', async (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`News app running on port ${port}`)
 })
